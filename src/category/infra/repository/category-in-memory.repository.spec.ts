@@ -76,6 +76,7 @@ describe("Category in memory repository unit tests", () => {
         }),
       ];
       const itemsSorted = await repository["applySort"](items, null, null);
+
       expect(itemsSorted).toStrictEqual([
         items[5],
         items[4],
